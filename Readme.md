@@ -6,7 +6,8 @@
 3. install prettier             ```npm i -D prettier```
 4. install packages ```npm i mongoose express dotenv```
 5. install cookie parser and CORS ```npm i cookie-parser cors```
-6. install ``` npm i mongoose-aggregate-paginate-v2```
+6. install ``` npm i mongoose-aggregate-paginate-v2``` for aggregation quaries.
+7. bcrypt for the password and jwt for tokenization ```npm i bcrypt jsonwebtoken```  . jwt(json web token)
 
 // while connecting wrap it in try and catch, and always add async await
 
