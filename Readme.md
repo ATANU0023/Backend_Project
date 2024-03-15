@@ -8,6 +8,8 @@
 5. install cookie parser and CORS ```npm i cookie-parser cors```
 6. install ``` npm i mongoose-aggregate-paginate-v2``` for aggregation quaries.
 7. bcrypt for the password and jwt for tokenization ```npm i bcrypt jsonwebtoken```  . jwt(json web token)
+8. ```npm install cloudinary```
+9. ```npm i multer```
 
 // while connecting wrap it in try and catch, and always add async await
 
