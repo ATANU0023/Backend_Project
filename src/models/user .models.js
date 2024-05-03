@@ -53,7 +53,7 @@ const userSchema = new mongoose.Schema({
 
 userSchema.pre("save", async function(next){ // for hashing password . pre is used before saving the data 
     if(!this.isModified("password")) return next(); // if password is not modified then goto next middleware.
-    this.password = bcrypt.hashSync(this.password,10); //If the password field has been modified, this line hashes the password using bcrypt. The number 10 is the salt round: the larger the number, the longer it takes to hash, and the more secure the hash is.
+    this.password = await bcrypt.hashSync(this.password,10); //If the password field has been modified, this line hashes the password using bcrypt. The number 10 is the salt round: the larger the number, the longer it takes to hash, and the more secure the hash is.
 
     next(); // This line calls the next middleware function in the stack. If there are no more middleware functions, it proceeds to the database operation.
 })
