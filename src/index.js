@@ -5,7 +5,7 @@ import dotenv from "dotenv";
 // import {  DB_NAME } from "./constants";
 import connectDB from "./db/index.js";
 
-dotenv.config({ path: './.env' }) // this line will read the .env file and parse the contents and assign it to process.env
+dotenv.config({ path: './env' }) // this line will read the .env file and parse the contents and assign it to process.env
 
 connectDB()
     .then(() => {  //here app will start listening and server will start.
@@ -24,25 +24,6 @@ connectDB()
     .catch((error) => {
         console.log("MONGODB connectioin failed", error);
     })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
